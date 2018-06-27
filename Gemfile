@@ -48,3 +48,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'devise-jwt'
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'rack-cors',require: 'rack/cors'
