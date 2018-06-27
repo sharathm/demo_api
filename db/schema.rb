@@ -10,11 +10,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_26_114404) do
+ActiveRecord::Schema.define(version: 2018_06_27_090533) do
 
   create_table "jwt_blacklist", force: :cascade do |t|
     t.string "jti", null: false
     t.index ["jti"], name: "index_jwt_blacklist_on_jti"
+  end
+
+  create_table "rentals", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "title"
+    t.string "owner"
+    t.string "city"
+    t.string "category"
+    t.string "image"
+    t.string "bedrooms"
+    t.string "description"
   end
 
   create_table "users", force: :cascade do |t|

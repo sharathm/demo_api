@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :rentals
   devise_for :users,
              path: '',
              path_names: {

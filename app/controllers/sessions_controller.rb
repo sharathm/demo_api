@@ -6,7 +6,7 @@ class SessionsController < Devise::SessionsController
 
 	def respond_with(resource, _opts = {})
 	  	# This is important, else ember-simple-auth and simple-auth-devise fails.
-	  	render json: { email: resource.email,token: request.env['warden-jwt_auth.token'] }
+		  render json: { email: resource.email,token: request.env['warden-jwt_auth.token'] }
 	end
 
 	def respond_to_on_destroy
