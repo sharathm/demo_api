@@ -50,3 +50,7 @@ gem 'devise-jwt'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'rack-cors',require: 'rack/cors'
 gem "active_model_serializers"
+gem 'activeadmin'
+gem 'active_admin_flat_skin'
+gem 'arctic_admin'
+gem 'rails_admin', '~> 1.3'
