@@ -4,7 +4,6 @@ class RentalsController < ApplicationController
   # GET /rentals
   def index
     @rentals = Rental.all
-
     render json: @rentals
   end
 
